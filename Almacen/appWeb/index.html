@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h1>CREAR PRODUCTO</h1>
+   <form action="ingreso.php" method="post" >
+    Nombre: <input type="text" name="nombre"><br>
+    Descripcion: <input type="text" name="desc"><br>
+    Precio: <input type="text" name="precio"><br>
+    <input type="submit" value="Enviar">
+
+   </form> 
+
+    <h2>Consultar productos </h2>
+    <form action="consultar.php" method="POST">
+        <input type="submit" value="Consultar">
+    </form>
+    </form>
+
+    <h2>Consultar Producto por ID</h2>
+    <form action="consultarproducto.php" method="GET">
+        <label for="producto_id">ID del Producto a Consultar:</label>
+        <input type="text" id="producto_id" name="producto_id">
+        <br>
+        <button type="submit">Consultar Producto</button>
+    </form>
+
+    <h2>Eliminar Producto</h2>
+    <form action="eliminar.php" method="POST">
+        <label for="producto_id">ID del Producto a Eliminar:</label>
+        <input type="text" id="producto_id" name="producto_id">
+        <button type="submit">Eliminar Producto</button>
+    </form>
+
+    <h2>Actualizar Producto</h2>
+    <form action="actualizar.php" method="POST">
+        <label for="producto_id">ID del Producto a Actualizar:</label>
+        <input type="text" id="producto_id" name="producto_id">
+        <br>
+        <label for="nuevo_nombre">Nuevo Nombre:</label>
+        <input type="text" id="nuevo_nombre" name="nuevo_nombre">
+        <br>
+        <label for="nueva_descripcion">Nueva Descripción:</label>
+        <input type="text" id="nueva_descripcion" name="nueva_descripcion">
+        <br>
+        <label for="nuevo_precio">Nuevo Precio:</label>
+        <input type="text" id="nuevo_precio" name="nuevo_precio">
+        <br>
+        <button type="submit">Actualizar Producto</button>
+    </form>
+
+</body>
+</html>
